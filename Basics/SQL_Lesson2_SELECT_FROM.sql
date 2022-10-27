@@ -2,7 +2,7 @@
 -- SQL Tutorial | Lesson 2 | SELECT and FROM Statements
 -- Description:
 -- Core SQL techniques explored in this tutorial.
--- Focus: Creating tables and inserting values into a created database.
+-- Focus: Utilizing the SELECT and FROM statements to access data in tables
 -- Source: Tutorial Presented by Alex Freberg
 -- Series: SQL Tutorials for Beginners
 --------------------------------------------------------------------------

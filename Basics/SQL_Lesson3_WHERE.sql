@@ -2,7 +2,7 @@
 -- SQL Tutorial | Lesson 3 | WHERE Statements
 -- Description:
 -- Core SQL techniques explored in this tutorial.
--- Focus: Creating tables and inserting values into a created database.
+-- Focus: Using WHERE statements and operators associated with it
 -- Source: Tutorial Presented by Alex Freberg
 -- Series: SQL Tutorials for Beginners
 --------------------------------------------------------------------------
