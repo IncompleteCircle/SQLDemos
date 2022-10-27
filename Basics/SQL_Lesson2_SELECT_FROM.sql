@@ -78,3 +78,34 @@ FROM SQLTutorial.dbo.tblEmployeeSalary
 -- records (rows) average, in this case employee salary.
 SELECT AVG(SQLTutorial.dbo.tblEmployeeSalary.Salary) AS AvgSalary
 FROM SQLTutorial.dbo.tblEmployeeSalary
+
+
+-- Query: Combine SELECT Statements + MAX + Subquery
+-- DB: SQLTutorial
+-- Table: tblEmployeeSalary
+-- Description: Query returns the information of the employee (ID, title)
+-- that contains the max salary in the table.
+SELECT
+	SQLTutorial.dbo.tblEmployeeSalary.EmployeeID,
+	SQLTutorial.dbo.tblEmployeeSalary.JobTitle,
+	SQLTutorial.dbo.tblEmployeeSalary.Salary
+FROM
+	SQLTutorial.dbo.tblEmployeeSalary
+WHERE
+	SQLTutorial.dbo.tblEmployeeSalary.Salary = (SELECT MAX(SQLTutorial.dbo.tblEmployeeSalary.Salary)
+										FROM SQLTutorial.dbo.tblEmployeeSalary);
+
+-- Query: Combine SELECT Statements + MIN + Subquery
+-- DB: SQLTutorial
+-- Table: tblEmployeeSalary
+-- Description: Query returns the information of the employee (ID, title)
+-- that contains the min salary in the table.
+SELECT
+	SQLTutorial.dbo.tblEmployeeSalary.EmployeeID,
+	SQLTutorial.dbo.tblEmployeeSalary.JobTitle,
+	SQLTutorial.dbo.tblEmployeeSalary.Salary
+FROM
+	SQLTutorial.dbo.tblEmployeeSalary
+WHERE
+	SQLTutorial.dbo.tblEmployeeSalary.Salary = (SELECT MIN(SQLTutorial.dbo.tblEmployeeSalary.Salary)
+										FROM SQLTutorial.dbo.tblEmployeeSalary);
