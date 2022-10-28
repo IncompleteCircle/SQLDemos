@@ -16,7 +16,7 @@ The purpose of this repository is to demonstrate the key SQL concepts and method
 1. Intermediate
 	1. Lesson 1: INNER, FULL, LEFT, RIGHT JOINS & USE Cases | [GitHub: SQL_Lesson1_InnerOuterJoins_UseCases](https://github.com/IncompleteCircle/SQLDemos/blob/main/Intermediate/SQL_Lesson1_InnerOuterJoins_UseCases.sql) 
 
-[========]
+
 #### Additional Remarks
 **Note:** To expand further on the concepts explained by the original tutorials by Alex Freberg, additional queries were written to illustrate further grasp of the topics.
 
