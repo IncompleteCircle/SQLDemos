@@ -13,9 +13,10 @@ The purpose of this repository is to demonstrate the key SQL concepts and method
 	2. Lesson 2: SELECT + FROM Statements | [GitHub: SQL_Lesson2_SELECT_FROM](https://github.com/IncompleteCircle/SQLDemos/blob/main/Basics/SQL_Lesson2_SELECT_FROM.sql)
 	3. Lesson 3: WHERE Statements | [GitHub: SQL_Lesson3_WHERE](https://github.com/IncompleteCircle/SQLDemos/blob/main/Basics/SQL_Lesson3_WHERE.sql)
 	4. Lesson 4: Group By & Order By | [GitHub: SQL_Lesson4_GroupBy_OrderBy](https://github.com/IncompleteCircle/SQLDemos/blob/main/Basics/SQL_Lesson4_GroupBy_OrderBy.sql)
-1. Intermediate (In Progress)
-1. Advanced (In Progress)
+1. Intermediate
+	1. Lesson 1: INNER, FULL, LEFT, RIGHT JOINS & USE Cases | [GitHub: SQL_Lesson1_InnerOuterJoins_UseCases](https://github.com/IncompleteCircle/SQLDemos/blob/main/Intermediate/SQL_Lesson1_InnerOuterJoins_UseCases.sql) 
 
+[========]
 #### Additional Remarks
 **Note:** To expand further on the concepts explained by the original tutorials by Alex Freberg, additional queries were written to illustrate further grasp of the topics.
 
