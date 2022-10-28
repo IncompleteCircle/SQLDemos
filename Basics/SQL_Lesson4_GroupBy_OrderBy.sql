@@ -116,3 +116,28 @@ FROM SQLTutorial.dbo.tblEmployeeDemographics
 ORDER BY 
 	SQLTutorial.dbo.tblEmployeeDemographics.Age DESC, 
 	SQLTutorial.dbo.tblEmployeeDemographics.Gender ASC
+
+-- Query: Group By and Order By
+-- DB: SQLTutorial
+-- Table: tblEmployeeSalary
+-- Description:
+-- Query provides a group by of salary incomes with the sum, minimum,
+-- average, maximum, and difference between the maximum and minimum (range).
+-- Orders it by the job title in alphabetical order.
+SELECT *
+FROM SQLTutorial.dbo.tblEmployeeSalary
+
+SELECT
+	SQLTutorial.dbo.tblEmployeeSalary.JobTitle,
+	COUNT(SQLTutorial.dbo.tblEmployeeSalary.JobTitle) AS CountPositions,
+	SUM(SQLTutorial.dbo.tblEmployeeSalary.Salary) AS SumSalary,
+	MIN(SQLTutorial.dbo.tblEmployeeSalary.Salary) AS MinSalary,
+	AVG(SQLTutorial.dbo.tblEmployeeSalary.Salary) AS AvgSalary,
+	MAX(SQLTutorial.dbo.tblEmployeeSalary.Salary) AS MaxSalary,
+	MAX(SQLTutorial.dbo.tblEmployeeSalary.Salary) - MIN(SQLTutorial.dbo.tblEmployeeSalary.Salary) AS RangeSalary
+FROM
+	SQLTutorial.dbo.tblEmployeeSalary
+GROUP BY
+	SQLTutorial.dbo.tblEmployeeSalary.JobTitle
+ORDER BY
+	SQLTutorial.dbo.tblEmployeeSalary.JobTitle ASC
