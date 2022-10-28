@@ -31,9 +31,13 @@ Aggregate Functions
 SELECT *
 FROM SQLTutorial.dbo.tblEmployeeDemographics
 
-SELECT SQLTutorial.dbo.tblEmployeeDemographics.Gender, COUNT(Gender)
-FROM SQLTutorial.dbo.tblEmployeeDemographics
-GROUP BY SQLTutorial.dbo.tblEmployeeDemographics.Gender
+SELECT 
+	SQLTutorial.dbo.tblEmployeeDemographics.Gender, 
+	COUNT(SQLTutorial.dbo.tblEmployeeDemographics.Gender) AS CountEmployeeGender
+FROM 
+	SQLTutorial.dbo.tblEmployeeDemographics
+GROUP BY 
+	SQLTutorial.dbo.tblEmployeeDemographics.Gender
 
 -- Query: Group By [By Two Columns]
 -- DB: SQLTutorial
@@ -83,7 +87,7 @@ FROM SQLTutorial.dbo.tblEmployeeDemographics
 
 SELECT 
 	SQLTutorial.dbo.tblEmployeeDemographics.Gender,
-	COUNT(SQLTutorial.dbo.tblEmployeeDemographics.Gender)
+	COUNT(SQLTutorial.dbo.tblEmployeeDemographics.Gender) AS CountEmployeeGender
 FROM 
 	SQLTutorial.dbo.tblEmployeeDemographics
 WHERE
@@ -108,14 +112,18 @@ ORDER BY SQLTutorial.dbo.tblEmployeeDemographics.Age ASC
 -- Description:
 -- Orders the queries return based on a given column
 -- Can alter the choice of each order by a given order type [ASC or DESC]
-SELECT *
-FROM SQLTutorial.dbo.tblEmployeeDemographics
+SELECT 
+	*
+FROM 
+	SQLTutorial.dbo.tblEmployeeDemographics
 ORDER BY 
 	SQLTutorial.dbo.tblEmployeeDemographics.Age ASC, 
 	SQLTutorial.dbo.tblEmployeeDemographics.Gender ASC
 
-SELECT *
-FROM SQLTutorial.dbo.tblEmployeeDemographics
+SELECT 
+	*
+FROM 
+	SQLTutorial.dbo.tblEmployeeDemographics
 ORDER BY 
 	SQLTutorial.dbo.tblEmployeeDemographics.Age DESC, 
 	SQLTutorial.dbo.tblEmployeeDemographics.Gender ASC
