@@ -18,4 +18,5 @@ The purpose of this repository is to demonstrate the key SQL concepts and method
 
 #### Additional Remarks
 **Note:** To expand further on the concepts explained by the original tutorials by Alex Freberg, additional queries were written to illustrate further grasp of the topics.
+
 **Database Management System Used:** Microsoft SQL Server 2019
