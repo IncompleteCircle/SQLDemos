@@ -148,4 +148,76 @@ GROUP BY
 	Gender
 ORDER BY
 	MaxAge DESC
+
+--------------------------------------------------------------------------
+-- Query: Extended Example
+-- DB: SQLTutorial + SysDB
+-- Tables:
+--	- tblEmployeeSalary
+--	- tblEmployeeDemographics
+-- Temp Tables:
+--	- #temptblJobPositionAvgSalary
+--
+-- Description:
+-- Query obtains employee IDs and their job title and states
+-- if they are either below, at, or above average salary levels.
+
+-- Preliminary Step: Check to see if temp table exists, if so drop its.
+-- Then create a temporary table to store average salary by job title
+IF OBJECT_ID(N'tempdb..#temptblJobPositionAvgSalary') IS NOT NULL
+BEGIN
+DROP TABLE #temptblJobPositionAvgSalary
+END
+GO
+CREATE TABLE #temptblJobPositionAvgSalary
+(
+	JobTitle varchar(50),
+	AvgSalaryByPosition int
+)
+-- After creating table, populate values into temp table.
+INSERT INTO #temptblJobPositionAvgSalary -- temporary table
+SELECT
+	SQLTutorial.dbo.tblEmployeeSalary.JobTitle,
+	AVG(SQLTutorial.dbo.tblEmployeeSalary.Salary)
+FROM
+	SQLTutorial.dbo.tblEmployeeDemographics
+JOIN SQLTutorial.dbo.tblEmployeeSalary
+	ON SQLTutorial.dbo.tblEmployeeDemographics.EmployeeID = SQLTutorial.dbo.tblEmployeeSalary.EmployeeID
+GROUP BY
+	SQLTutorial.dbo.tblEmployeeSalary.JobTitle
+ORDER BY
+	AVG(SQLTutorial.dbo.tblEmployeeSalary.Salary) DESC
+
+-- View temporary table
+SELECT *
+FROM #temptblJobPositionAvgSalary
+
+-- Join on tblEmployeeSalary and temp table: #temptblJobPositionAvgSalary
+-- Uses Case When statements to check if salary is above, at, or below average levels.
+SELECT
+	SQLTutorial.dbo.tblEmployeeSalary.EmployeeID,
+	SQLTutorial.dbo.tblEmployeeSalary.JobTitle,
+	SQLTutorial.dbo.tblEmployeeSalary.Salary,
+	#temptblJobPositionAvgSalary.AvgSalaryByPosition,
+	CASE
+		WHEN SQLTutorial.dbo.tblEmployeeSalary.Salary > #temptblJobPositionAvgSalary.AvgSalaryByPosition THEN 'Above Average'
+		WHEN SQLTutorial.dbo.tblEmployeeSalary.Salary = #temptblJobPositionAvgSalary.AvgSalaryByPosition THEN 'Average'
+		WHEN SQLTutorial.dbo.tblEmployeeSalary.Salary < #temptblJobPositionAvgSalary.AvgSalaryByPosition THEN 'Below Average'
+		ELSE NULL
+	END as IncomeLevelStatus
+FROM
+	SQLTutorial.dbo.tblEmployeeSalary
+JOIN #temptblJobPositionAvgSalary
+	ON SQLTutorial.dbo.tblEmployeeSalary.JobTitle = #temptblJobPositionAvgSalary.JobTitle
+WHERE 
+	SQLTutorial.dbo.tblEmployeeSalary.EmployeeID is NOT NULL AND
+	SQLTutorial.dbo.tblEmployeeSalary.Salary >= #temptblJobPositionAvgSalary.AvgSalaryByPosition
+ORDER BY
+	SQLTutorial.dbo.tblEmployeeSalary.Salary DESC
+
+-- Drops Table After Running Above Queries
+IF OBJECT_ID(N'tempdb..#temptblJobPositionAvgSalary') IS NOT NULL
+BEGIN
+DROP TABLE #temptblJobPositionAvgSalary
+END
 --------------------------------------------------------------------------
