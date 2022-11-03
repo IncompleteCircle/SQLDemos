@@ -14,7 +14,7 @@ The purpose of this repository is to demonstrate the key SQL concepts and method
 	3. Lesson 3: WHERE Statements | [GitHub: SQL_Lesson3_WHERE](https://github.com/IncompleteCircle/SQLDemos/blob/main/Basics/SQL_Lesson3_WHERE.sql)
 	4. Lesson 4: Group By & Order By | [GitHub: SQL_Lesson4_GroupBy_OrderBy](https://github.com/IncompleteCircle/SQLDemos/blob/main/Basics/SQL_Lesson4_GroupBy_OrderBy.sql)
 1. Intermediate
-	1. Lesson 1: INNER, FULL, LEFT, RIGHT JOINS & USE Cases | [GitHub: SQL_Lesson1_InnerOuterJoins_UseCases](https://github.com/IncompleteCircle/SQLDemos/blob/main/Intermediate/SQL_Lesson1_InnerOuterJoins_UseCases.sql)
+	1. Lesson 1: Inner, Full Outer, Left, Right Joins & Use Cases | [GitHub: SQL_Lesson1_InnerOuterJoins_UseCases](https://github.com/IncompleteCircle/SQLDemos/blob/main/Intermediate/SQL_Lesson1_InnerOuterJoins_UseCases.sql)
 	2. Lesson 2: Union, Union All | [GitHub: SQL_Lesson2_Union](https://github.com/IncompleteCircle/SQLDemos/blob/main/Intermediate/SQL_Lesson2_Union.sql)
 	3. Lesson 3: Case Statements | [GitHub: SQL_Lesson3_CaseStatements](https://github.com/IncompleteCircle/SQLDemos/blob/main/Intermediate/SQL_Lesson3_CaseStatements.sql)
 	4. Lesson 4: Having Clause | [GitHub: SQL_Lesson4_HavingClause](https://github.com/IncompleteCircle/SQLDemos/blob/main/Intermediate/SQL_Lesson4_HavingClause.sql)
