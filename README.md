@@ -16,7 +16,7 @@ The purpose of this repository is to demonstrate the key SQL concepts and method
 1. Intermediate
 	1. Lesson 1: INNER, FULL, LEFT, RIGHT JOINS & USE Cases | [GitHub: SQL_Lesson1_InnerOuterJoins_UseCases](https://github.com/IncompleteCircle/SQLDemos/blob/main/Intermediate/SQL_Lesson1_InnerOuterJoins_UseCases.sql)
 	2. Lesson 2: Union, Union All | [GitHub: SQL_Lesson2_Union](https://github.com/IncompleteCircle/SQLDemos/blob/main/Intermediate/SQL_Lesson2_Union.sql)
-	3. Lesson 3:
+	3. Lesson 3: Case Statements | [GitHub: SQL_Lesson3_CaseStatements](https://github.com/IncompleteCircle/SQLDemos/blob/main/Intermediate/SQL_Lesson3_CaseStatements.sql)
 	4. Lesson 4:
 	5. Lesson 5:
 	6. Lesson 6:
