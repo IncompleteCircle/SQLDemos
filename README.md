@@ -20,7 +20,7 @@ The purpose of this repository is to demonstrate the key SQL concepts and method
 	4. Lesson 4: Having Clause | [GitHub: SQL_Lesson4_HavingClause](https://github.com/IncompleteCircle/SQLDemos/blob/main/Intermediate/SQL_Lesson4_HavingClause.sql)
 	5. Lesson 5: Update & Delete | [GitHub: SQL_Lesson5_UpdateDeleteData](https://github.com/IncompleteCircle/SQLDemos/blob/main/Intermediate/SQL_Lesson5_UpdateDeleteData.sql)
 	6. Lesson 6: Aliasing | [GitHub: SQL_Lesson6_Aliasing](https://github.com/IncompleteCircle/SQLDemos/blob/main/Intermediate/SQL_Lesson6_Aliasing.sql)
-	7. Lesson 7:
+	7. Lesson 7: Partition By | [GitHub: SQL_Lesson7_PartitionBy]()
 
 
 #### Additional Remarks
