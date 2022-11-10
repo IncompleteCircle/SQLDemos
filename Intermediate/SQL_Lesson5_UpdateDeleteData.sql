@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------
--- SQL Tutorial | Lesson 4 | Update & Delete Data
+-- SQL Tutorial | Lesson 5 | Update & Delete Data
 -- Description:
 -- Core SQL techniques explored in this tutorial.
 -- Focus: Updating and Deleting Data
