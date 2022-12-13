@@ -2,7 +2,7 @@
 -- SQL Tutorial | Lesson 1 | CTE (Common Table Expressions)
 -- Description:
 -- Core SQL techniques explored in this tutorial.
--- Focus: 
+-- Focus: CTE (Common Table Expressions) 
 -- Source: Tutorial Presented by Alex Freberg
 -- Series: Advanced SQL Tutorials
 --------------------------------------------------------------------------
