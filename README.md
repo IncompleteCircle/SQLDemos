@@ -24,7 +24,7 @@ The purpose of this repository is to demonstrate the key SQL concepts and method
 
 1. **Advanced**
 	1. Lesson 1: CTE (Common Table Expression) | [GitHub: SQL_Adv_Lesson1_CTE](https://github.com/IncompleteCircle/SQLDemos/blob/main/Advanced/SQL_Adv_Lesson_1_CTE.sql)
-	2. Lesson 2: 
+	2. Lesson 2: Temporary Tabes | [GitHub: SQL_Adv_Lesson2_TempTables](https://github.com/IncompleteCircle/SQLDemos/blob/main/Advanced/SQL_Adv_Lesson2_TempTables.sql)
 	3. Lesson 3:
 	4. Lesson 4:
 	5. Lesson 5:
